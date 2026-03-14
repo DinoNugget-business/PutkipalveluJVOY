@@ -9,12 +9,14 @@ import SectionHeading from "@/components/ui/SectionHeading";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 
 const SERVICE_KEYS = [
-  "putkityot",
-  "lammitys",
-  "vesijohtotyot",
-  "viemariotyot",
-  "kylpyhuoneremontti",
-  "huolto",
+  "energiaremontti",
+  "maalampo",
+  "kaukolampo",
+  "lviUrakointi",
+  "linjasaneeraus",
+  "lviHuolto",
+  "jaahdytys",
+  "aliurakointi",
 ] as const;
 
 export default function ServicesOverview() {

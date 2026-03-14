@@ -15,7 +15,16 @@ type IconName =
   | "truck"
   | "chevron-down"
   | "external-link"
-  | "alert-circle";
+  | "alert-circle"
+  | "heat-pump"
+  | "building"
+  | "thermometer"
+  | "refresh"
+  | "snowflake"
+  | "hard-hat"
+  | "clipboard"
+  | "check-circle"
+  | "arrow-right";
 
 type Props = {
   name: IconName;
@@ -55,6 +64,24 @@ const PATHS: Record<IconName, string> = {
     "M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3",
   "alert-circle":
     "M12 2a10 10 0 100 20 10 10 0 000-20zM12 8v4m0 4h.01",
+  "heat-pump":
+    "M12 2a10 10 0 100 20 10 10 0 000-20z M12 6v4l3 2 M8 14l-2 4 M16 14l2 4 M12 16v2",
+  building:
+    "M3 21h18M5 21V7l7-4 7 4v14 M9 21v-4h6v4 M9 9h.01 M15 9h.01 M9 13h.01 M15 13h.01",
+  thermometer:
+    "M14 14.76V3.5a2.5 2.5 0 00-5 0v11.26a4.5 4.5 0 105 0z",
+  refresh:
+    "M1 4v6h6 M23 20v-6h-6 M20.49 9A9 9 0 005.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 013.51 15",
+  snowflake:
+    "M12 2v20 M4.93 4.93l14.14 14.14 M2 12h20 M4.93 19.07l14.14-14.14",
+  "hard-hat":
+    "M2 18h20 M4 18v-4a8 8 0 0116 0v4 M12 2v6",
+  clipboard:
+    "M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2 M9 2h6a1 1 0 011 1v1a1 1 0 01-1 1H9a1 1 0 01-1-1V3a1 1 0 011-1z",
+  "check-circle":
+    "M22 11.08V12a10 10 0 11-5.93-9.14 M22 4L12 14.01l-3-3",
+  "arrow-right":
+    "M5 12h14M12 5l7 7-7 7",
 };
 
 export default function Icon({ name, size = 24, className = "" }: Props) {

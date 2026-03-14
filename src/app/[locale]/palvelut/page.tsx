@@ -1,17 +1,20 @@
 import { useTranslations } from "next-intl";
 import PageHeader from "@/components/layout/PageHeader";
 import ScrollReveal from "@/components/ui/ScrollReveal";
+import SectionHeading from "@/components/ui/SectionHeading";
 import Icon from "@/components/ui/Icon";
 import type { IconName } from "@/components/ui/Icon";
-import { SERVICE_ICONS } from "@/lib/constants";
+import { SERVICE_ICONS, CONTACT } from "@/lib/constants";
 
 const SERVICE_KEYS = [
-  "putkityot",
-  "lammitys",
-  "vesijohtotyot",
-  "viemariotyot",
-  "kylpyhuoneremontti",
-  "huolto",
+  "energiaremontti",
+  "maalampo",
+  "kaukolampo",
+  "lviUrakointi",
+  "linjasaneeraus",
+  "lviHuolto",
+  "jaahdytys",
+  "aliurakointi",
 ] as const;
 
 export default function ServicesPage() {
@@ -47,6 +50,45 @@ export default function ServicesPage() {
               </ScrollReveal>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Why energy renovation? */}
+      <section className="py-16 sm:py-20 bg-bg-light">
+        <div className="max-w-4xl mx-auto px-4">
+          <ScrollReveal>
+            <SectionHeading
+              title={t("services.whyEnergyTitle")}
+              accent
+            />
+          </ScrollReveal>
+          <ScrollReveal>
+            <div className="space-y-4 text-text-muted leading-relaxed">
+              <p>{t("services.whyEnergyP1")}</p>
+              <p>{t("services.whyEnergyP2")}</p>
+            </div>
+          </ScrollReveal>
+          <ScrollReveal>
+            <div className="mt-8 flex flex-wrap gap-4">
+              <a
+                href={CONTACT.phoneHref}
+                className="btn-sweep inline-flex items-center gap-2.5 px-7 py-3.5 rounded-lg font-semibold text-base
+                  bg-brand-accent text-white hover:bg-brand-accent-dark
+                  shadow-lg hover:shadow-xl transition-all duration-300"
+              >
+                <Icon name="phone" size={18} />
+                {t("common.callJanne")}
+              </a>
+              <a
+                href={`mailto:${CONTACT.email}`}
+                className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-lg font-semibold text-base
+                  border-2 border-brand-primary/30 text-brand-primary hover:bg-brand-primary/5 transition-all duration-300"
+              >
+                <Icon name="mail" size={18} />
+                {t("common.getQuote")}
+              </a>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
     </>

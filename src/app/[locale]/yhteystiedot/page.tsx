@@ -25,7 +25,7 @@ export default function ContactPage() {
                 <div className="w-10 h-10 rounded-full bg-brand-primary/10 flex items-center justify-center mx-auto mb-3">
                   <Icon name="phone" size={20} className="text-brand-primary" />
                 </div>
-                <h3 className="font-display font-semibold text-sm mb-1">{t("common.callUs")}</h3>
+                <h3 className="font-display font-semibold text-sm mb-1">{t("common.callJanne")}</h3>
                 <a href={CONTACT.phoneHref} className="text-brand-primary font-medium text-sm hover:text-brand-accent transition-colors">
                   {CONTACT.phone}
                 </a>

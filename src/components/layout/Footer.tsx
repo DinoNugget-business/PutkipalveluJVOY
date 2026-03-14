@@ -18,11 +18,11 @@ export default function Footer() {
       <div className="h-[2px] bg-gradient-to-r from-transparent via-brand-accent to-transparent opacity-60" />
 
       <div className="max-w-6xl mx-auto px-4 py-14">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Logo + tagline */}
           <div>
             <span className="font-display font-bold text-2xl text-text-light block mb-5">
-              Putkipalvelu JV
+              Putkipalvelu J&V
             </span>
             <p className="text-text-muted-dark text-sm leading-relaxed">
               {t("metadata.description")}
@@ -68,6 +68,17 @@ export default function Footer() {
                   </Link>
                 </li>
               ))}
+            </ul>
+          </div>
+
+          {/* Company info */}
+          <div>
+            <h3 className="font-display font-semibold text-lg mb-5">
+              {t("footer.companyInfo")}
+            </h3>
+            <ul className="space-y-3 text-sm text-text-muted-dark">
+              <li>{t("footer.yTunnus")}</li>
+              <li>{t("footer.member")}</li>
             </ul>
           </div>
         </div>

@@ -1,12 +1,12 @@
 {
   "metadata": {
-    "title": "Putkipalvelu JV Oy — Putkityöt, lämmitys ja remontti",
-    "description": "Ammattitaitoisia putkitöitä, lämmitysratkaisuja ja kylpyhuoneremontteja. Luotettavaa palvelua."
+    "title": "LVI-urakointi ja energiaremontit Uudellamaalla | Putkipalvelu J&V Oy",
+    "description": "Maalämpöasennukset, kaukolämpöpaketit, linjasaneeraukset ja LVI-huolto Uudellamaalla. Omistajavetoisesti, ilman välikäsiä. Soita Jannelle — 045 359 9813."
   },
   "common": {
-    "phone": "000 000 0000",
-    "email": "info@putkipalvelujv.fi",
-    "address": "Osoite 1, 00000 KAUPUNKI",
+    "phone": "045 359 9813",
+    "email": "Janne.kurki@gmail.com",
+    "address": "[VERIFY: osoite]",
     "readMore": "Lue lisää",
     "send": "Lähetä",
     "name": "Nimi",
@@ -14,12 +14,13 @@
     "phoneField": "Puhelin",
     "message": "Viesti",
     "thankYou": "Kiitos viestistäsi!",
-    "thankYouDesc": "Otamme sinuun yhteyttä mahdollisimman pian.",
+    "thankYouDesc": "Janne vastaa sinulle mahdollisimman pian.",
     "learnMore": "Lue lisää",
     "contactUs": "Ota yhteyttä",
-    "callUs": "Soita meille",
+    "callJanne": "Soita Jannelle",
     "getQuote": "Pyydä tarjous",
-    "directions": "Ajo-ohjeet"
+    "directions": "Ajo-ohjeet",
+    "freeAssessment": "Ilmainen kartoitus"
   },
   "nav": {
     "home": "Etusivu",
@@ -28,76 +29,121 @@
     "contact": "Yhteystiedot"
   },
   "home": {
-    "heroBadge": "Luotettava putkialan ammattilainen",
-    "heroTitle": "Putkityöt ammattitaidolla — nopeasti ja luotettavasti",
-    "heroSubtitle": "Tarjoamme kattavat putkipalvelut koteihin ja yrityksille. Putkityöt, lämmitys, viemärit ja kylpyhuoneremontit.",
-    "heroCta": "Soita meille",
-    "statYears": "10+",
-    "statYearsLabel": "vuotta kokemusta",
-    "statProjects": "500+",
-    "statProjectsLabel": "projektia",
-    "statService": "24/7",
-    "statServiceLabel": "päivystys",
-    "statSatisfaction": "100%",
-    "statSatisfactionLabel": "tyytyväisyys",
-    "servicesTitle": "Palvelumme",
-    "servicesSubtitle": "Kattava valikoima putkialan palveluita ammattitaidolla toteutettuna.",
-    "ctaTitle": "Tarvitsetko putkimiestä?",
-    "ctaSubtitle": "Ota yhteyttä — autamme nopeasti ja ammattitaidolla kaikissa putkitöissä.",
-    "ctaCta": "Soita nyt",
+    "heroBadge": "Rakennusvoima ry:n jäsen",
+    "heroTitle": "Energiaremontit ja maalämpöasennukset Uudellamaalla",
+    "heroSubtitle": "Janne Kurki hoitaa LVI-työt alusta loppuun — maalämpö, kaukolämpö, linjasaneeraukset. Yksi yhteyshenkilö, ei yllätyksiä.",
+    "heroCta": "Soita Jannelle",
+    "heroCtaEmail": "Pyydä tarjous",
+    "statFounded": "2022",
+    "statFoundedLabel": "perustettu",
+    "statArea": "Uusimaa",
+    "statAreaLabel": "palvelualue",
+    "statMember": "Jäsen",
+    "statMemberLabel": "Rakennusvoima ry",
+    "statOwner": "Omistajavetoisesti",
+    "statOwnerLabel": "aina sama tekijä",
+    "trustTitle": "Miksi Putkipalvelu J&V?",
+    "trust1Value": "Rakennusvoima ry",
+    "trust1Label": "Jäsen — alan tunnettu järjestö",
+    "trust2Value": "3239668-7",
+    "trust2Label": "Y-tunnus — rekisteröity yritys",
+    "trust3Value": "Uusimaa",
+    "trust3Label": "Palvelualue — koko maakunta",
+    "trust4Value": "Omistajavetoisesti",
+    "trust4Label": "Janne hoitaa itse, alusta loppuun",
+    "servicesTitle": "Palvelut",
+    "servicesSubtitle": "Erikoistumme energiaremontteihin ja moderneihin lämmitysratkaisuihin.",
+    "howTitle": "Näin se hoituu",
+    "howSubtitle": "Neljä askelta tilauksesta valmiiseen työhön.",
+    "howStep1Title": "Yhteydenotto",
+    "howStep1Desc": "Soitat tai lähetät viestin — Janne vastaa henkilökohtaisesti.",
+    "howStep2Title": "Kartoitus",
+    "howStep2Desc": "Käymme paikan päällä arvioimassa työn laajuuden. Kartoitus on ilmainen.",
+    "howStep3Title": "Toteutus",
+    "howStep3Desc": "Sovitaan aikataulu ja hinta. Työ tehdään siististi ja aikataulussa.",
+    "howStep4Title": "Valmis",
+    "howStep4Desc": "Tarkistamme työn yhdessä. Laskussa ei ole yllätyksiä.",
+    "whyTitle": "Kuka tekee työsi?",
+    "whySubtitle": "Putkipalvelu J&V:n perustaja Janne Kurki hoitaa LVI-työt henkilökohtaisesti.",
+    "whyP1": "Perustin Putkipalvelu J&V:n vuonna 2022, koska halusin tehdä LVI-töitä omalla tavallani — rehellisesti, aikataulussa ja ilman turhaa byrokratiaa.",
+    "whyP2": "Erikoistumme energiaremontteihin: maalämpö, kaukolämpö ja putkiremontit. Kun soitat, puhut suoraan minulle. Kun tulen paikalle, tiedät kuka tulee.",
+    "whyMember": "Rakennusvoima ry:n jäsen",
+    "whyYtunnus": "Y-tunnus: 3239668-7",
+    "ctaTitle": "Suunnitteletko energiaremonttia?",
+    "ctaSubtitle": "Soita Jannelle — ilmainen kartoitus ja tarjous. Ei velvoita mihinkään.",
+    "ctaCta": "Soita nyt — 045 359 9813",
     "ctaEmail": "Lähetä tarjouspyyntö"
   },
   "services": {
     "title": "Palvelut",
-    "subtitle": "Ammattitaitoisia putkipalveluita koteihin ja yrityksille.",
-    "putkityot": {
-      "title": "Putkityöt",
-      "description": "Kaikki putkityöt ammattitaidolla — asennus, korjaus ja huolto. Käyttövesi- ja lämmitysputkistot."
+    "subtitle": "Erikoistumme energiaremontteihin ja moderneihin LVI-ratkaisuihin Uudellamaalla.",
+    "energiaremontti": {
+      "title": "Energiaremontit",
+      "description": "Kokonaisvaltaiset energiaremontit, joilla parannat kiinteistösi energiatehokkuutta ja alennat lämmityskuluja. Suunnittelemme ja toteutamme ratkaisun, joka sopii juuri sinun tilanteeseen."
     },
-    "lammitys": {
-      "title": "Lämmitysjärjestelmät",
-      "description": "Lämmitysjärjestelmien asennus, huolto ja korjaus. Lattialämmitys, patterit ja lämpöpumput."
+    "maalampo": {
+      "title": "Maalämpöasennukset",
+      "description": "Maalämpöjärjestelmän asennus avaimet käteen — porauksesta käyttöönottoon. Maalämpö voi laskea lämmityskulusi jopa 70 %. Autamme myös ARA-tukihakemusten kanssa."
     },
-    "vesijohtotyot": {
-      "title": "Vesijohtotyöt",
-      "description": "Vesijohtojen asennus ja korjaus. Vuotojen paikannus ja vesijärjestelmien uusiminen."
+    "kaukolampo": {
+      "title": "Kaukolämpöpaketit",
+      "description": "Kaukolämpöpaketin asennus ja vanhan järjestelmän vaihto. Hoidamme koko prosessin energiayhtiön kanssa ja varmistamme sujuvan siirtymän."
     },
-    "viemariotyot": {
-      "title": "Viemärityöt",
-      "description": "Viemärien asennus, korjaus ja huuhtelu. Tukosten avaus ja viemärikuvaukset."
+    "lviUrakointi": {
+      "title": "LVI-urakointi",
+      "description": "Putkityöt uudis- ja saneerauskohteisiin. Käyttövesi- ja lämmitysputkistot, viemärit, lattialämmitys — kaikki LVI-asennukset yhdestä paikasta."
     },
-    "kylpyhuoneremontti": {
-      "title": "Kylpyhuoneremontit",
-      "description": "Kokonaisvaltaiset kylpyhuoneremontit avaimet käteen -periaatteella. Vesieristys, laatoitus ja kalusteasennus."
+    "linjasaneeraus": {
+      "title": "Linjasaneeraukset",
+      "description": "Taloyhtiöiden putkiremontit eli linjasaneeraukset. Vesi- ja viemäriputkien uusiminen, lämmitysjärjestelmien päivitys. Minimoidaan asukkaiden häiriö."
     },
-    "huolto": {
-      "title": "Huolto ja kunnossapito",
-      "description": "Säännöllinen putkistojen huolto ja ennakoiva kunnossapito. Kiinteistöjen LVI-huolto."
-    }
+    "lviHuolto": {
+      "title": "LVI-huolto",
+      "description": "Säännöllinen LVI-huolto kiinteistöille ja kotitalouksille. Ennakoiva huolto ehkäisee vikoja ja pidentää järjestelmien käyttöikää."
+    },
+    "jaahdytys": {
+      "title": "Jäähdytysjärjestelmät",
+      "description": "Jäähdytysjärjestelmien asennus ja huolto. Ilmalämpöpumput ja keskitetyt jäähdytysratkaisut asuin- ja liikekiinteistöihin."
+    },
+    "aliurakointi": {
+      "title": "Aliurakointi",
+      "description": "LVI-aliurakointipalvelut rakennusliikkeille. Joustavasti ja aikataulussa — ilmoita tarpeesi, sovimme loput."
+    },
+    "whyEnergyTitle": "Miksi energiaremontti?",
+    "whyEnergyP1": "Suomen rakennuskanta vanhenee ja energian hinta nousee. Energiaremontti on investointi, joka maksaa itsensä takaisin alentuneina lämmityskuluina.",
+    "whyEnergyP2": "Maalämpö voi vähentää lämmityskuluja jopa 70 %. Kaukolämpöön siirtyminen poistaa huolen öljy- tai sähkölämmityksen hinnasta. Molemmat nostavat kiinteistön arvoa."
   },
   "about": {
     "title": "Meistä",
-    "subtitle": "Putkipalvelu JV Oy — luotettavaa putkialan osaamista.",
-    "introTitle": "Keitä olemme",
-    "introP1": "Putkipalvelu JV Oy on ammattitaitoinen putkialan yritys, joka tarjoaa kattavia putkipalveluita kotitalouksille ja yrityksille.",
-    "introP2": "Kokenut tiimimme hoitaa kaikki putkityöt nopeasti ja laadukkaasti — pienistä korjauksista suuriin remontteihin.",
-    "valuesTitle": "Arvomme",
-    "value1Title": "Ammattitaito",
-    "value1Desc": "Kokeneet putkiasentajat ja jatkuva kouluttautuminen takaavat laadukkaan työn.",
-    "value2Title": "Luotettavuus",
-    "value2Desc": "Pidämme kiinni sovituista aikatauluista ja hinnoista. Ei yllätyksiä.",
-    "value3Title": "Asiakaslähtöisyys",
-    "value3Desc": "Kuuntelemme asiakasta ja löydämme parhaan ratkaisun jokaiseen tilanteeseen."
+    "subtitle": "Putkipalvelu J&V Oy — omistajavetoisesti Uudellamaalla.",
+    "introTitle": "Janne Kurki, perustaja",
+    "introP1": "Perustin Putkipalvelu J&V:n vuonna 2022. Halusin tehdä LVI-töitä niin kuin itse haluaisin, että ne tehdään — suoraan, aikataulussa ja ilman turhia välikäsiä.",
+    "introP2": "Erikoistumme energiaremontteihin: maalämpöasennukset, kaukolämpöpaketit ja linjasaneeraukset. Kun soitat meille, puhut suoraan minulle. Kun tulen paikalle, tiedät kuka tulee. Tämä on pienen yrityksen vahvuus.",
+    "valuesTitle": "Näin toimimme",
+    "value1Title": "Yksi yhteyshenkilö",
+    "value1Desc": "Janne hoitaa työn alusta loppuun. Sinun ei tarvitse selittää tilannettasi uudelleen joka kerta.",
+    "value2Title": "Selkeät hinnat",
+    "value2Desc": "Kerromme hinnan etukäteen ja pidämme siitä kiinni. Laskussa ei ole yllätyksiä.",
+    "value3Title": "Energiaremontin erikoisosaaja",
+    "value3Desc": "Emme yritä olla kaikkea kaikille. Keskitymme siihen, minkä osaamme parhaiten — modernit lämmitys- ja energiaratkaisut.",
+    "memberTitle": "Rakennusvoima ry:n jäsen",
+    "memberDesc": "Putkipalvelu J&V Oy on Rakennusvoima ry:n jäsen. Rakennusvoima on suomalainen rakennusalan järjestö, joka edistää alan yritysten toimintaedellytyksiä ja ammattitaitoa.",
+    "yTunnusLabel": "Y-tunnus",
+    "yTunnusValue": "3239668-7"
   },
   "contact": {
     "title": "Yhteystiedot",
-    "subtitle": "Ota rohkeasti yhteyttä — autamme mielellämme!",
+    "subtitle": "Soita, lähetä viesti tai pyydä tarjous — Janne vastaa henkilökohtaisesti.",
     "formTitle": "Lähetä viesti",
-    "locationTitle": "Sijainti"
+    "locationTitle": "Sijainti",
+    "responseTime": "Janne vastaa yleensä saman päivän aikana."
   },
   "footer": {
     "contactTitle": "Yhteystiedot",
     "quickLinks": "Pikalinkit",
-    "copyright": "© {year} Putkipalvelu JV Oy. Kaikki oikeudet pidätetään."
+    "companyInfo": "Yritystiedot",
+    "yTunnus": "Y-tunnus: 3239668-7",
+    "member": "Rakennusvoima ry:n jäsen",
+    "copyright": "© {year} Putkipalvelu J&V Oy. Kaikki oikeudet pidätetään."
   }
 }

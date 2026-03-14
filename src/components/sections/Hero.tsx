@@ -64,7 +64,7 @@ export default function Hero() {
                   border-2 border-white/30 text-text-light hover:bg-white/10 transition-all duration-300"
               >
                 <Icon name="mail" size={18} />
-                {t("ctaEmail")}
+                {t("heroCtaEmail")}
               </a>
             </div>
           </div>
@@ -74,10 +74,10 @@ export default function Hero() {
         <div className="hero-scroll w-full border-t border-white/10 bg-brand-darker/40 backdrop-blur-sm">
           <div className="max-w-6xl mx-auto px-4 py-4 grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-8">
             {[
-              { value: t("statYears"), label: t("statYearsLabel") },
-              { value: t("statProjects"), label: t("statProjectsLabel") },
-              { value: t("statService"), label: t("statServiceLabel") },
-              { value: t("statSatisfaction"), label: t("statSatisfactionLabel") },
+              { value: t("statFounded"), label: t("statFoundedLabel") },
+              { value: t("statArea"), label: t("statAreaLabel") },
+              { value: t("statMember"), label: t("statMemberLabel") },
+              { value: t("statOwner"), label: t("statOwnerLabel") },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
                 <div className="font-display font-bold text-xl sm:text-2xl text-brand-accent">

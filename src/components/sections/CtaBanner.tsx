@@ -26,7 +26,7 @@ export default function CtaBanner() {
                 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5"
             >
               <Icon name="phone" size={18} />
-              {t("ctaCta")}: {CONTACT.phone}
+              {t("ctaCta")}
             </a>
             <a
               href={`mailto:${CONTACT.email}`}
