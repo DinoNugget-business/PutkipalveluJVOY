@@ -25,7 +25,7 @@ export default function AboutPage() {
       <section className="py-16 sm:py-20">
         <div className="max-w-4xl mx-auto px-4">
           <div className="flex flex-col sm:flex-row gap-8 items-start">
-            <ScrollReveal direction="left">
+            <ScrollReveal>
               <div className="flex-1">
                 <SectionHeading title={t("introTitle")} accent align="left" />
                 <div className="space-y-4 text-text-muted leading-relaxed">
@@ -34,9 +34,9 @@ export default function AboutPage() {
                 </div>
               </div>
             </ScrollReveal>
-            <ScrollReveal direction="right">
+            <ScrollReveal>
               <div className="flex flex-col items-center gap-3 shrink-0">
-                <div className="w-24 h-24 rounded-full bg-gradient-to-br from-brand-primary to-brand-accent flex items-center justify-center">
+                <div className="w-24 h-24 rounded-full bg-brand-dark flex items-center justify-center">
                   <span className="font-display font-bold text-2xl text-white tracking-wide">JK</span>
                 </div>
                 <span className="font-display font-semibold text-text-primary text-sm">Janne Kurki</span>
@@ -52,10 +52,10 @@ export default function AboutPage() {
           <ScrollReveal>
             <SectionHeading title={t("valuesTitle")} accent />
           </ScrollReveal>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 stagger-children">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {VALUES.map(({ key, icon }) => (
               <ScrollReveal key={key}>
-                <div className="light-card rounded-xl p-6 text-center h-full">
+                <div className="border border-border-light rounded-lg p-6 text-center h-full">
                   <div className="w-14 h-14 rounded-full bg-brand-primary/10 flex items-center justify-center mx-auto mb-4">
                     <Icon name={icon} size={28} className="text-brand-primary" />
                   </div>
@@ -76,7 +76,7 @@ export default function AboutPage() {
       <section className="py-16 sm:py-20">
         <div className="max-w-4xl mx-auto px-4">
           <ScrollReveal>
-            <div className="light-card rounded-xl p-8">
+            <div className="border border-border-light rounded-lg p-8">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-full bg-brand-primary/10 flex items-center justify-center shrink-0">
                   <Icon name="award" size={24} className="text-brand-primary" />

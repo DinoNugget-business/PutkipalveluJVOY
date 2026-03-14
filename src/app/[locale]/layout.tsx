@@ -8,7 +8,6 @@ import { Inter, Rajdhani } from "next/font/google";
 import { routing } from "@/i18n/routing";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import ScrollProgress from "@/components/ui/ScrollProgress";
 import "../globals.css";
 
 const inter = Inter({
@@ -102,7 +101,6 @@ export default async function LocaleLayout({ children, params }: Props) {
       </head>
       <body className="bg-white font-body antialiased">
         <NextIntlClientProvider messages={messages}>
-          <ScrollProgress />
           <Header />
           <main className="min-h-screen">{children}</main>
           <Footer />

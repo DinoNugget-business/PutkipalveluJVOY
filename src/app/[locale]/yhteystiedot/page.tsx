@@ -19,9 +19,9 @@ export default function ContactPage() {
       <section className="py-16 sm:py-20">
         <div className="max-w-6xl mx-auto px-4">
           {/* Contact cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-16 stagger-children">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-16">
             <ScrollReveal>
-              <div className="light-card rounded-xl p-5 text-center h-full">
+              <div className="border border-border-light rounded-lg p-5 text-center h-full">
                 <div className="w-10 h-10 rounded-full bg-brand-primary/10 flex items-center justify-center mx-auto mb-3">
                   <Icon name="phone" size={20} className="text-brand-primary" />
                 </div>
@@ -33,7 +33,7 @@ export default function ContactPage() {
             </ScrollReveal>
 
             <ScrollReveal>
-              <div className="light-card rounded-xl p-5 text-center h-full">
+              <div className="border border-border-light rounded-lg p-5 text-center h-full">
                 <div className="w-10 h-10 rounded-full bg-brand-primary/10 flex items-center justify-center mx-auto mb-3">
                   <Icon name="mail" size={20} className="text-brand-primary" />
                 </div>
@@ -45,7 +45,7 @@ export default function ContactPage() {
             </ScrollReveal>
 
             <ScrollReveal>
-              <div className="light-card rounded-xl p-5 text-center h-full">
+              <div className="border border-border-light rounded-lg p-5 text-center h-full">
                 <div className="w-10 h-10 rounded-full bg-brand-primary/10 flex items-center justify-center mx-auto mb-3">
                   <Icon name="map-pin" size={20} className="text-brand-primary" />
                 </div>
@@ -59,13 +59,13 @@ export default function ContactPage() {
 
           {/* Form + Map */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <ScrollReveal direction="left">
+            <ScrollReveal>
               <h2 className="font-display font-bold text-xl mb-6 text-text-primary">
                 {t("contact.formTitle")}
               </h2>
               <ContactForm />
             </ScrollReveal>
-            <ScrollReveal direction="right">
+            <ScrollReveal>
               <h2 className="font-display font-bold text-xl mb-6 text-text-primary">
                 {t("contact.locationTitle")}
               </h2>

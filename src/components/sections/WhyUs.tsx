@@ -8,11 +8,11 @@ export default function WhyUs() {
   const t = useTranslations("home");
 
   return (
-    <section className="py-16 sm:py-20 bg-bg-white">
+    <section className="py-20 sm:py-28 bg-bg-warm">
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left column: heading + quote paragraphs */}
-          <ScrollReveal direction="left">
+          <ScrollReveal>
             <SectionHeading
               title={t("whyTitle")}
               subtitle={t("whySubtitle")}
@@ -31,10 +31,10 @@ export default function WhyUs() {
           </ScrollReveal>
 
           {/* Right column: avatar + badges */}
-          <ScrollReveal direction="right">
+          <ScrollReveal>
             <div className="flex flex-col items-center lg:items-center gap-5">
-              {/* Avatar circle with initials */}
-              <div className="w-20 h-20 rounded-full bg-gradient-to-br from-brand-primary to-brand-accent flex items-center justify-center shadow-lg">
+              {/* Avatar circle with initials — flat */}
+              <div className="w-20 h-20 rounded-full bg-brand-dark flex items-center justify-center">
                 <span className="font-display font-bold text-2xl text-white">
                   JK
                 </span>

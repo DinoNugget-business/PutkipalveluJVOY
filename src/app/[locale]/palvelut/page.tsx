@@ -29,10 +29,10 @@ export default function ServicesPage() {
 
       <section className="py-16 sm:py-20">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 stagger-children">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {SERVICE_KEYS.map((key) => (
               <ScrollReveal key={key}>
-                <div className="light-card rounded-xl p-6 h-full">
+                <div className="border border-border-light rounded-lg p-6 h-full">
                   <div className="w-14 h-14 rounded-xl bg-brand-primary/10 flex items-center justify-center mb-4">
                     <Icon
                       name={SERVICE_ICONS[key] as IconName}
@@ -72,9 +72,8 @@ export default function ServicesPage() {
             <div className="mt-8 flex flex-wrap gap-4">
               <a
                 href={CONTACT.phoneHref}
-                className="btn-sweep inline-flex items-center gap-2.5 px-7 py-3.5 rounded-lg font-semibold text-base
-                  bg-brand-accent text-white hover:bg-brand-accent-dark
-                  shadow-lg hover:shadow-xl transition-all duration-300"
+                className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-lg font-semibold text-base
+                  bg-brand-accent text-white hover:bg-brand-accent-dark transition-colors"
               >
                 <Icon name="phone" size={18} />
                 {t("common.callJanne")}
@@ -82,7 +81,7 @@ export default function ServicesPage() {
               <a
                 href={`mailto:${CONTACT.email}`}
                 className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-lg font-semibold text-base
-                  border-2 border-brand-primary/30 text-brand-primary hover:bg-brand-primary/5 transition-all duration-300"
+                  border-2 border-brand-primary/30 text-brand-primary hover:bg-brand-primary/5 transition-colors"
               >
                 <Icon name="mail" size={18} />
                 {t("common.getQuote")}

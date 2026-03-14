@@ -15,7 +15,7 @@ export default function Footer() {
   return (
     <footer className="bg-brand-dark text-text-light">
       {/* Accent top line */}
-      <div className="h-[2px] bg-gradient-to-r from-transparent via-brand-accent to-transparent opacity-60" />
+      <div className="h-[2px] bg-brand-accent" />
 
       <div className="max-w-6xl mx-auto px-4 py-14">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">

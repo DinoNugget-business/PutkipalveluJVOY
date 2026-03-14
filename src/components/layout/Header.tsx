@@ -50,7 +50,7 @@ export default function Header() {
       <header
         className={`sticky top-0 z-50 border-b transition-all duration-300 ${
           scrolled
-            ? "bg-brand-dark/90 backdrop-blur-xl border-brand-border/50 shadow-md"
+            ? "bg-brand-dark border-brand-border/50 shadow-md"
             : "bg-brand-dark border-brand-border shadow-lg"
         }`}
       >

@@ -30,33 +30,31 @@ export default function ServicesOverview() {
             title={t("home.servicesTitle")}
             subtitle={t("home.servicesSubtitle")}
             accent
+            align="left"
           />
         </ScrollReveal>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 stagger-children">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {SERVICE_KEYS.map((key) => (
             <ScrollReveal key={key}>
               <Link
                 href="/palvelut"
-                className="group block light-card rounded-xl p-6 h-full"
+                className="block border border-border-light rounded-lg p-6 h-full hover:border-brand-accent transition-colors"
               >
-                <div className="w-14 h-14 rounded-xl bg-brand-primary/10 flex items-center justify-center mb-4 group-hover:bg-brand-accent/15 transition-colors">
+                <div className="w-14 h-14 rounded-xl bg-brand-primary/10 flex items-center justify-center mb-4">
                   <Icon
                     name={SERVICE_ICONS[key] as IconName}
                     size={28}
-                    className="text-brand-primary group-hover:text-brand-accent transition-colors"
+                    className="text-brand-primary"
                   />
                 </div>
-                <h3 className="font-display font-semibold text-lg mb-2 text-text-primary group-hover:text-brand-accent transition-colors">
+                <h3 className="font-display font-semibold text-lg mb-2 text-text-primary">
                   {t(`services.${key}.title`)}
                 </h3>
                 <p className="text-sm text-text-muted leading-relaxed line-clamp-3">
                   {t(`services.${key}.description`)}
                 </p>
-                <span className="inline-flex items-center gap-1 mt-3 text-sm font-semibold text-brand-primary group-hover:text-brand-accent transition-colors">
+                <span className="inline-flex items-center gap-1 mt-3 text-sm font-semibold text-brand-primary">
                   {t("common.learnMore")}
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="transform group-hover:translate-x-1 transition-transform">
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                  </svg>
                 </span>
               </Link>
             </ScrollReveal>

@@ -19,7 +19,7 @@ export default function SectionHeading({
     <div className={`mb-12 ${isCenter ? "text-center" : ""}`}>
       {accent && (
         <div
-          className={`w-12 h-1 bg-brand-accent rounded-full mb-4 ${
+          className={`w-16 h-1 bg-brand-accent rounded-full mb-4 ${
             isCenter ? "mx-auto" : ""
           }`}
         />

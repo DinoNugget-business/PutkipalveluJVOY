@@ -18,13 +18,11 @@ export default function Button({
   type = "button",
 }: Props) {
   const base =
-    "inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-semibold text-sm transition-all duration-300 cursor-pointer";
+    "inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-semibold text-sm transition-colors duration-300 cursor-pointer";
 
   const variants = {
-    primary:
-      "bg-brand-accent text-white hover:bg-brand-accent-dark btn-shimmer shadow-md hover:shadow-lg hover:-translate-y-0.5",
-    secondary:
-      "bg-brand-primary text-white hover:bg-brand-primary-dark shadow-md hover:shadow-lg hover:-translate-y-0.5",
+    primary: "bg-brand-accent text-white hover:bg-brand-accent-dark",
+    secondary: "bg-brand-primary text-white hover:bg-brand-primary-dark",
     outline:
       "border-2 border-brand-accent text-brand-accent hover:bg-brand-accent hover:text-white",
   };

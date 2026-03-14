@@ -28,7 +28,7 @@ export default function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="glass-card rounded-xl p-6 sm:p-8 space-y-4">
+    <form onSubmit={handleSubmit} className="border border-border-light rounded-xl p-6 sm:p-8 space-y-4">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <label className="block">
           <span className="text-sm font-medium text-text-primary">{t("name")} *</span>
