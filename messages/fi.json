@@ -1,0 +1,103 @@
+{
+  "metadata": {
+    "title": "Putkipalvelu JV Oy — Putkityöt, lämmitys ja remontti",
+    "description": "Ammattitaitoisia putkitöitä, lämmitysratkaisuja ja kylpyhuoneremontteja. Luotettavaa palvelua."
+  },
+  "common": {
+    "phone": "000 000 0000",
+    "email": "info@putkipalvelujv.fi",
+    "address": "Osoite 1, 00000 KAUPUNKI",
+    "readMore": "Lue lisää",
+    "send": "Lähetä",
+    "name": "Nimi",
+    "emailField": "Sähköposti",
+    "phoneField": "Puhelin",
+    "message": "Viesti",
+    "thankYou": "Kiitos viestistäsi!",
+    "thankYouDesc": "Otamme sinuun yhteyttä mahdollisimman pian.",
+    "learnMore": "Lue lisää",
+    "contactUs": "Ota yhteyttä",
+    "callUs": "Soita meille",
+    "getQuote": "Pyydä tarjous",
+    "directions": "Ajo-ohjeet"
+  },
+  "nav": {
+    "home": "Etusivu",
+    "services": "Palvelut",
+    "about": "Meistä",
+    "contact": "Yhteystiedot"
+  },
+  "home": {
+    "heroBadge": "Luotettava putkialan ammattilainen",
+    "heroTitle": "Putkityöt ammattitaidolla — nopeasti ja luotettavasti",
+    "heroSubtitle": "Tarjoamme kattavat putkipalvelut koteihin ja yrityksille. Putkityöt, lämmitys, viemärit ja kylpyhuoneremontit.",
+    "heroCta": "Soita meille",
+    "statYears": "10+",
+    "statYearsLabel": "vuotta kokemusta",
+    "statProjects": "500+",
+    "statProjectsLabel": "projektia",
+    "statService": "24/7",
+    "statServiceLabel": "päivystys",
+    "statSatisfaction": "100%",
+    "statSatisfactionLabel": "tyytyväisyys",
+    "servicesTitle": "Palvelumme",
+    "servicesSubtitle": "Kattava valikoima putkialan palveluita ammattitaidolla toteutettuna.",
+    "ctaTitle": "Tarvitsetko putkimiestä?",
+    "ctaSubtitle": "Ota yhteyttä — autamme nopeasti ja ammattitaidolla kaikissa putkitöissä.",
+    "ctaCta": "Soita nyt",
+    "ctaEmail": "Lähetä tarjouspyyntö"
+  },
+  "services": {
+    "title": "Palvelut",
+    "subtitle": "Ammattitaitoisia putkipalveluita koteihin ja yrityksille.",
+    "putkityot": {
+      "title": "Putkityöt",
+      "description": "Kaikki putkityöt ammattitaidolla — asennus, korjaus ja huolto. Käyttövesi- ja lämmitysputkistot."
+    },
+    "lammitys": {
+      "title": "Lämmitysjärjestelmät",
+      "description": "Lämmitysjärjestelmien asennus, huolto ja korjaus. Lattialämmitys, patterit ja lämpöpumput."
+    },
+    "vesijohtotyot": {
+      "title": "Vesijohtotyöt",
+      "description": "Vesijohtojen asennus ja korjaus. Vuotojen paikannus ja vesijärjestelmien uusiminen."
+    },
+    "viemariotyot": {
+      "title": "Viemärityöt",
+      "description": "Viemärien asennus, korjaus ja huuhtelu. Tukosten avaus ja viemärikuvaukset."
+    },
+    "kylpyhuoneremontti": {
+      "title": "Kylpyhuoneremontit",
+      "description": "Kokonaisvaltaiset kylpyhuoneremontit avaimet käteen -periaatteella. Vesieristys, laatoitus ja kalusteasennus."
+    },
+    "huolto": {
+      "title": "Huolto ja kunnossapito",
+      "description": "Säännöllinen putkistojen huolto ja ennakoiva kunnossapito. Kiinteistöjen LVI-huolto."
+    }
+  },
+  "about": {
+    "title": "Meistä",
+    "subtitle": "Putkipalvelu JV Oy — luotettavaa putkialan osaamista.",
+    "introTitle": "Keitä olemme",
+    "introP1": "Putkipalvelu JV Oy on ammattitaitoinen putkialan yritys, joka tarjoaa kattavia putkipalveluita kotitalouksille ja yrityksille.",
+    "introP2": "Kokenut tiimimme hoitaa kaikki putkityöt nopeasti ja laadukkaasti — pienistä korjauksista suuriin remontteihin.",
+    "valuesTitle": "Arvomme",
+    "value1Title": "Ammattitaito",
+    "value1Desc": "Kokeneet putkiasentajat ja jatkuva kouluttautuminen takaavat laadukkaan työn.",
+    "value2Title": "Luotettavuus",
+    "value2Desc": "Pidämme kiinni sovituista aikatauluista ja hinnoista. Ei yllätyksiä.",
+    "value3Title": "Asiakaslähtöisyys",
+    "value3Desc": "Kuuntelemme asiakasta ja löydämme parhaan ratkaisun jokaiseen tilanteeseen."
+  },
+  "contact": {
+    "title": "Yhteystiedot",
+    "subtitle": "Ota rohkeasti yhteyttä — autamme mielellämme!",
+    "formTitle": "Lähetä viesti",
+    "locationTitle": "Sijainti"
+  },
+  "footer": {
+    "contactTitle": "Yhteystiedot",
+    "quickLinks": "Pikalinkit",
+    "copyright": "© {year} Putkipalvelu JV Oy. Kaikki oikeudet pidätetään."
+  }
+}

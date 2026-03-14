@@ -1,0 +1,103 @@
+{
+  "metadata": {
+    "title": "Putkipalvelu JV Oy — Plumbing, Heating & Renovation",
+    "description": "Professional plumbing services, heating solutions and bathroom renovations. Reliable service."
+  },
+  "common": {
+    "phone": "000 000 0000",
+    "email": "info@putkipalvelujv.fi",
+    "address": "Address 1, 00000 CITY",
+    "readMore": "Read more",
+    "send": "Send",
+    "name": "Name",
+    "emailField": "Email",
+    "phoneField": "Phone",
+    "message": "Message",
+    "thankYou": "Thank you for your message!",
+    "thankYouDesc": "We will get back to you as soon as possible.",
+    "learnMore": "Learn more",
+    "contactUs": "Contact us",
+    "callUs": "Call us",
+    "getQuote": "Request a quote",
+    "directions": "Get directions"
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "home": {
+    "heroBadge": "Trusted plumbing professional",
+    "heroTitle": "Professional plumbing — fast and reliable",
+    "heroSubtitle": "We offer comprehensive plumbing services for homes and businesses. Plumbing, heating, sewers and bathroom renovations.",
+    "heroCta": "Call us",
+    "statYears": "10+",
+    "statYearsLabel": "years of experience",
+    "statProjects": "500+",
+    "statProjectsLabel": "projects",
+    "statService": "24/7",
+    "statServiceLabel": "service",
+    "statSatisfaction": "100%",
+    "statSatisfactionLabel": "satisfaction",
+    "servicesTitle": "Our Services",
+    "servicesSubtitle": "Comprehensive range of plumbing services delivered with expertise.",
+    "ctaTitle": "Need a plumber?",
+    "ctaSubtitle": "Contact us — we help quickly and professionally with all plumbing work.",
+    "ctaCta": "Call now",
+    "ctaEmail": "Request a quote"
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "Professional plumbing services for homes and businesses.",
+    "putkityot": {
+      "title": "Plumbing Work",
+      "description": "All plumbing work done professionally — installation, repair and maintenance. Water supply and heating piping."
+    },
+    "lammitys": {
+      "title": "Heating Systems",
+      "description": "Installation, maintenance and repair of heating systems. Underfloor heating, radiators and heat pumps."
+    },
+    "vesijohtotyot": {
+      "title": "Water Pipe Work",
+      "description": "Water pipe installation and repair. Leak detection and water system renewal."
+    },
+    "viemariotyot": {
+      "title": "Sewer Work",
+      "description": "Sewer installation, repair and flushing. Blockage removal and sewer inspections."
+    },
+    "kylpyhuoneremontti": {
+      "title": "Bathroom Renovations",
+      "description": "Complete bathroom renovations on a turnkey basis. Waterproofing, tiling and fixture installation."
+    },
+    "huolto": {
+      "title": "Maintenance",
+      "description": "Regular plumbing maintenance and preventive upkeep. Property HVAC maintenance."
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Putkipalvelu JV Oy — reliable plumbing expertise.",
+    "introTitle": "Who we are",
+    "introP1": "Putkipalvelu JV Oy is a professional plumbing company offering comprehensive plumbing services for households and businesses.",
+    "introP2": "Our experienced team handles all plumbing work quickly and with quality — from small repairs to major renovations.",
+    "valuesTitle": "Our Values",
+    "value1Title": "Expertise",
+    "value1Desc": "Experienced plumbers and continuous training guarantee quality work.",
+    "value2Title": "Reliability",
+    "value2Desc": "We stick to agreed schedules and prices. No surprises.",
+    "value3Title": "Customer Focus",
+    "value3Desc": "We listen to our customers and find the best solution for every situation."
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Don't hesitate to reach out — we're happy to help!",
+    "formTitle": "Send a message",
+    "locationTitle": "Location"
+  },
+  "footer": {
+    "contactTitle": "Contact Info",
+    "quickLinks": "Quick Links",
+    "copyright": "© {year} Putkipalvelu JV Oy. All rights reserved."
+  }
+}

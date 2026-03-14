@@ -1,0 +1,358 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Primary — deep blue (trust, water, reliability) */
+  --color-brand-primary: #1A4B8C;
+  --color-brand-primary-dark: #133668;
+  --color-brand-primary-light: #2B6CB0;
+
+  /* Accent — vibrant orange for CTAs */
+  --color-brand-accent: #E86B1A;
+  --color-brand-accent-dark: #CC5A15;
+  --color-brand-accent-light: #F59E4A;
+
+  /* Dark section backgrounds */
+  --color-brand-dark: #1A2535;
+  --color-brand-darker: #111B27;
+  --color-brand-surface: #1E2938;
+  --color-brand-border: #2E3D52;
+
+  /* Light section backgrounds */
+  --color-bg-light: #F5F7FA;
+  --color-bg-white: #FFFFFF;
+  --color-border-light: #D8DEE6;
+
+  /* Text — light sections */
+  --color-text-primary: #1A2535;
+  --color-text-muted: #5A6577;
+  --color-text-dim: #8494A7;
+
+  /* Text — dark sections */
+  --color-text-light: #F5F5F5;
+  --color-text-muted-dark: #9CA3B4;
+
+  /* Fonts */
+  --font-display: "Rajdhani", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg-white);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
+/* ============================
+   ANIMATION KEYFRAMES
+   ============================ */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* ============================
+   GRADIENT MESH — Hero bg
+   ============================ */
+
+@keyframes meshFloat {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.hero-mesh {
+  background: linear-gradient(
+    135deg,
+    var(--color-brand-darker),
+    var(--color-brand-dark),
+    var(--color-brand-primary),
+    var(--color-brand-darker)
+  );
+  background-size: 300% 300%;
+  animation: meshFloat 14s ease infinite;
+}
+
+/* ============================
+   CTA GRADIENT SHIFT
+   ============================ */
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.cta-gradient {
+  background: linear-gradient(135deg, var(--color-brand-primary), var(--color-brand-primary-dark), var(--color-brand-primary));
+  background-size: 200% 200%;
+  animation: gradientShift 8s ease infinite;
+}
+
+/* ============================
+   HERO LOAD SEQUENCE
+   ============================ */
+
+.hero-heading  { animation: fadeInUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) 200ms both; }
+.hero-subtext  { animation: fadeInUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) 350ms both; }
+.hero-ctas     { animation: fadeInUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) 500ms both; }
+.hero-scroll   { animation: fadeInUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) 700ms both; }
+
+/* ============================
+   BOUNCE SCROLL INDICATOR
+   ============================ */
+
+@keyframes bounceDown {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50%      { transform: translateX(-50%) translateY(10px); }
+}
+
+.scroll-indicator {
+  animation: bounceDown 2s ease-in-out infinite;
+  transition: opacity 0.4s ease;
+}
+
+.scroll-indicator.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* ============================
+   UTILITY ANIMATION CLASSES
+   ============================ */
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px) scale(0.97);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.animate-on-scroll.anim-fadeLeft {
+  transform: translateX(-30px) scale(0.97);
+}
+
+.animate-on-scroll.anim-fadeRight {
+  transform: translateX(30px) scale(0.97);
+}
+
+.animate-on-scroll.anim-scaleIn {
+  transform: scale(0.9);
+}
+
+.animate-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.stagger-children .animate-on-scroll:nth-child(1) { transition-delay: 0ms; }
+.stagger-children .animate-on-scroll:nth-child(2) { transition-delay: 80ms; }
+.stagger-children .animate-on-scroll:nth-child(3) { transition-delay: 160ms; }
+.stagger-children .animate-on-scroll:nth-child(4) { transition-delay: 240ms; }
+.stagger-children .animate-on-scroll:nth-child(5) { transition-delay: 320ms; }
+.stagger-children .animate-on-scroll:nth-child(6) { transition-delay: 400ms; }
+
+.btn-shimmer {
+  background-image: linear-gradient(
+    110deg,
+    transparent 25%,
+    rgba(255, 255, 255, 0.15) 50%,
+    transparent 75%
+  );
+  background-size: 200% 100%;
+}
+
+.btn-shimmer:hover {
+  animation: shimmer 1.5s ease-in-out;
+}
+
+/* ============================
+   BUTTON SWEEP HOVER
+   ============================ */
+
+.btn-sweep {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.btn-sweep::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.15);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  z-index: -1;
+}
+
+.btn-sweep:hover::before {
+  transform: scaleX(1);
+}
+
+.glass-card {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(245, 247, 250, 0.8) 100%
+  );
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(26, 75, 140, 0.08);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  border-color: rgba(26, 75, 140, 0.25);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.95) 0%,
+    rgba(245, 247, 250, 0.9) 100%
+  );
+  box-shadow:
+    0 8px 30px rgba(0, 0, 0, 0.06),
+    0 0 0 1px rgba(26, 75, 140, 0.1);
+}
+
+.light-card {
+  background: var(--color-bg-white);
+  border: 1px solid var(--color-border-light);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.light-card:hover {
+  border-color: rgba(232, 107, 26, 0.3);
+  box-shadow:
+    0 12px 32px rgba(0, 0, 0, 0.08),
+    0 0 0 1px rgba(232, 107, 26, 0.12);
+  transform: translateY(-3px);
+}
+
+.dark-card {
+  background: var(--color-brand-surface);
+  border: 1px solid var(--color-brand-border);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dark-card:hover {
+  border-color: rgba(232, 107, 26, 0.4);
+  box-shadow:
+    0 12px 32px rgba(0, 0, 0, 0.3),
+    0 0 0 1px rgba(232, 107, 26, 0.2);
+  transform: translateY(-3px);
+}
+
+/* ============================
+   NAV LINK UNDERLINE HOVER
+   ============================ */
+
+.nav-link {
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--color-brand-accent);
+  transition: width 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* ============================
+   MOBILE NAV STAGGER
+   ============================ */
+
+.mobile-nav-item {
+  animation: fadeInUp 0.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* ============================
+   INNER PAGE LOAD SEQUENCE
+   ============================ */
+
+.page-heading { animation: fadeInUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) 200ms both; }
+.page-subtitle { animation: fadeInUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) 350ms both; }
+.page-accent   { animation: fadeInUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) 450ms both; }
+
+/* ============================
+   PREFERS REDUCED MOTION
+   ============================ */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .animate-on-scroll {
+    opacity: 1;
+    transform: none;
+  }
+}
